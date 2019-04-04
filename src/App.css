@@ -1,5 +1,11 @@
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+
+body {
+  background-color:peachpuff;
 }
 
 .App-logo {
@@ -18,6 +24,51 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+input {
+  display: inline-block;
+}
+
+.card {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  padding: 20px;
+  margin-top: 15px;
+  border-radius: 3px;
+  background-color: white;
+}
+
+.wrapper {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  border-radius: 3px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
+  margin-top: 15px;
+  background-color: white;
+}
+
+.password {
+  color: red;
+}
+
+.password-container {
+  width: 5em;
+  overflow: hidden;
+  transition: 400ms;
+}
+
+.password-container:hover {
+  width: 100%;
+}
+
+
+/* .password ::before {
+  content: '';
+  width: 50px;
+  he
+} */
 
 .App-link {
   color: #61dafb;
